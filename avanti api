@@ -1,0 +1,14 @@
+avanti-api/
+├─ package.json
+├─ tsconfig.json
+├─ Dockerfile
+├─ README.md
+├─ prisma/
+│  ├─ schema.prisma
+│  └─ seed.mjs
+└─ src/
+   ├─ index.ts
+   ├─ lib/
+   │  └─ prisma.ts
+   └─ routes/
+      └─ auth.ts
