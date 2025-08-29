@@ -1,1 +1,29 @@
-{"name":"avanti-web","version":"1.0.0"}
+{
+  "name": "avanti-api",
+  "version": "1.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "seed": "node prisma/seed.mjs",
+    "prisma:push": "prisma db push",
+    "prisma:gen": "prisma generate"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "@prisma/client": "^5.16.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "ts-node": "^10.9.2",
+    "nodemon": "^3.0.2",
+    "prisma": "^5.16.1"
+  }
+}
